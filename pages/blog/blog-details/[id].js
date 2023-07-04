@@ -73,19 +73,6 @@ const BlogSingleDynamic = () => {
               </div>
               {/* End BlogNavigator */}
 
-              <div className="border-top-light pt-40 mt-40" />
-
-              <div className="row">
-                <div className="col-auto">
-                  <h3 className="text-22 fw-500">Leave a Reply</h3>
-                  <p className="text-15 text-dark-1 mt-5">
-                    Your email address will not be published.
-                  </p>
-                </div>
-              </div>
-              {/* End Leave a repy title */}
-
-              <FormReply />
             </div>
             {/* End .col */}
           </div>

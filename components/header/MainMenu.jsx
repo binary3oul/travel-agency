@@ -2,13 +2,9 @@ import Link from "next/link";
 
 import {
   homeItems,
-  blogItems,
-  pageItems,
-  dashboardItems,
+  categories
 } from "../../data/mainMenuData";
-import CategoriesMegaMenu from "./CategoriesMegaMenu";
 import {
-  isActiveParent,
   isActiveLink,
   isActiveParentChaild,
 } from "../../utils/linkActiveChecker";
@@ -25,29 +21,55 @@ const MainMenu = ({ style = "" }) => {
             isActiveParentChaild(homeItems, router.asPath) ? "current" : ""
           } menu-item-has-children`}
         >
-          <a href="/">
+          <Link href="/">
             <span className="mr-10">Home</span>
-          </a>
+          </Link>
         </li>
         {/* End home page menu */}
 
         <li className="menu-item-has-children -has-mega-menu">
-          <a href="/hotel/hotel-list-v5">
+          <Link href="/hotel/hotel-list-v5">
             <span className="mr-10">Destination</span>
-          </a>
+          </Link>
         </li>
 
         <li className="menu-item-has-children -has-mega-menu">
-          <a href="/hotel/hotel-single-v1/5">
+          <Link href="/hotel/hotel-single-v1/5">
             <span className="mr-10">Locations</span>
-          </a>
+          </Link>
         </li>
 
-        <li className="menu-item-has-children -has-mega-menu">
-          <a href="/blog/blog-details/1">
+        {/* <li className="menu-item-has-children -has-mega-menu">
+          <Link href="/blog/blog-details/1">
             <span className="mr-10">Blog</span>
+          </Link>
+        </li> */}
+        <li className="menu-item-has-children -has-mega-menu">
+          <a href="#">
+            <span className="mr-10">Categories</span>
+            <i className="icon icon-chevron-sm-down" />
           </a>
+          <ul className="subnav">
+            {categories.map((menu, i) => (
+              <li
+                key={i}
+                className={
+                  isActiveLink(menu.routePath, router.asPath) ? "current" : ""
+                }
+              >
+                <Link href={menu.routePath}>{menu.name}</Link>
+              </li>
+            ))}
+          </ul>
         </li>
+        {/* End categories menu items */}
+
+        <li className="menu-item-has-children -has-mega-menu">
+          <Link href="/others-pages/about">
+            <span className="mr-10">About Us</span>
+          </Link>
+        </li>
+        
       </ul>
     </nav>
   );

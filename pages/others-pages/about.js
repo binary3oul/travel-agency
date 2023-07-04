@@ -7,10 +7,6 @@ import WhyChoose from "../../components/block/BlockGuide";
 import Block1 from "../../components/about/Block1";
 import Image from "next/image";
 import Counter from "../../components/counter/Counter";
-import Team1 from "../../components/team/Team1";
-import Testimonial from "../../components/testimonial/Testimonial";
-import Counter2 from "../../components/counter/Counter2";
-import Brand from "../../components/brand/Brand";
 
 const About = () => {
   return (
@@ -94,74 +90,6 @@ const About = () => {
         </div>
       </section>
       {/* End counter Section */}
-
-      <section className="layout-pt-lg layout-pb-lg">
-        <div className="container">
-          <div className="row y-gap-20 justify-between items-end">
-            <div className="col-auto">
-              <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">Our Team</h2>
-                <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Lorem ipsum dolor sit amet
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <div className=" pt-40 js-section-slider">
-            <div className="item_gap-x30">
-              <Team1 />
-            </div>
-          </div>
-          {/* End  js-section-slider */}
-        </div>
-        {/* End container */}
-      </section>
-      {/* End team section */}
-
-      <section className="section-bg layout-pt-lg layout-pb-lg">
-        <div className="section-bg__item -mx-20 bg-light-2" />
-        <div className="container">
-          <div className="row justify-center text-center">
-            <div className="col-auto">
-              <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">
-                  Overheard from travelers
-                </h2>
-                <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  These popular destinations have a lot to offer
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <div className="overflow-hidden pt-80 js-section-slider">
-            <div className="item_gap-x30">
-              <Testimonial />
-            </div>
-          </div>
-          {/* End .overflow-hidden */}
-
-          <div className="row y-gap-30 items-center pt-40 sm:pt-20">
-            <div className="col-xl-4">
-              <Counter2 />
-            </div>
-            {/* End .col */}
-
-            <div className="col-xl-8">
-              <div className="row y-gap-30 justify-between items-center">
-                <Brand />
-              </div>
-            </div>
-            {/* End .col */}
-          </div>
-          {/* End .row */}
-        </div>
-        {/* End .container */}
-      </section>
-      {/* End testimonial section */}
 
       <CallToActions />
       {/* End Call To Actions Section */}

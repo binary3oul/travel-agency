@@ -137,70 +137,6 @@ export const dashboardItems = [
 
 export const categorieMegaMenuItems = [
   {
-    id: 1,
-    menuCol: [
-      {
-        id: 1,
-        megaBanner: "/img/backgrounds/7.png",
-        title: "Things to do on your hotel",
-        btnText: "See Hotel",
-        btnRoute: "/hotel/hotel-list-v1",
-        menuItems: [
-          {
-            id: 1,
-            title: "Hotel List",
-            menuList: [
-              {
-                name: "Hotel List v1",
-                routePath: "/hotel/hotel-list-v1",
-              },
-              {
-                name: "Hotel List v2",
-                routePath: "/hotel/hotel-list-v2",
-              },
-              {
-                name: "Hotel List v3",
-                routePath: "/hotel/hotel-list-v3",
-              },
-              {
-                name: "Hotel List v4",
-                routePath: "/hotel/hotel-list-v4",
-              },
-              {
-                name: "Hotel List v5",
-                routePath: "/hotel/hotel-list-v5",
-              },
-            ],
-          },
-          {
-            id: 2,
-            title: "Hotel Single",
-            menuList: [
-              {
-                name: "Hotel Single v1",
-                routePath: "/hotel/hotel-single-v1/5",
-              },
-              {
-                name: "Hotel Single v2",
-                routePath: "/hotel/hotel-single-v2/3",
-              },
-            ],
-          },
-          {
-            id: 3,
-            title: "Hotel Booking",
-            menuList: [
-              {
-                name: "Booking Page",
-                routePath: "/hotel/booking-page",
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: 2,
     menuCol: [
       {
@@ -278,48 +214,6 @@ export const categorieMegaMenuItems = [
                 name: "Activity Single",
                 routePath: "activity-single",
                 routePath: "/activity/activity-single/3",
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 4,
-    menuCol: [
-      {
-        id: 1,
-        megaBanner: "/img/backgrounds/10.png",
-        title: "Things to do on your rentals",
-        btnText: "See Rental",
-        btnRoute: "/rental/rental-list-v1",
-        menuItems: [
-          {
-            id: 1,
-            title: "Rental List",
-            menuList: [
-              {
-                name: "Rental List v1",
-                routePath: "/rental/rental-list-v1",
-              },
-              {
-                name: "Rental List v2",
-                routePath: "/rental/rental-list-v2",
-              },
-            ],
-          },
-          {
-            id: 2,
-            title: "Rental Pages",
-            menuList: [
-              {
-                name: "Rental Map",
-                routePath: "/rental/rental-list-v3",
-              },
-              {
-                name: "Rental Single",
-                routePath: "/rental/rental-single/3",
               },
             ],
           },
@@ -437,6 +331,29 @@ export const categorieMegaMenuItems = [
     ],
   },
 ];
+
+export const categories = [
+  {
+    name: "Tour",
+    routePath: "/tour/tour-list-v1",
+  },
+  {
+    name: "Activity",
+    routePath: "/activity/activity-list-v1",
+  },
+  {
+    name: "Car",
+    routePath: "/car/car-list-v1",
+  },
+  {
+    name: "Cruise",
+    routePath: "/cruise/cruise-list-v1",
+  },
+  {
+    name: "Flight",
+    routePath: "/flight/flight-list-v1",
+  },
+]
 
 export const categorieMobileItems = [
   {

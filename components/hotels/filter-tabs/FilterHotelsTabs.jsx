@@ -22,7 +22,7 @@ const FilterTabsHotels3 = () => {
             className={`tabs__button text-14 fw-500 px-20 py-10 rounded-4 bg-light-2 js-tabs-button ${
               filterOption === option.value ? "is-tab-el-active" : ""
             }`}
-            onClick={() => alert(123123)}
+            onClick={() => setFilterOption(option.value)}
           >
             {option.label}
           </button>
